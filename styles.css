@@ -1,0 +1,61 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    font-family: monospace;
+    padding: 40px;
+    max-width: 100%;
+}
+
+h1{
+    margin: 30px 0;
+}
+
+.campo-batalla{
+    margin: 0 auto;
+    border: solid red ;
+    padding: 25px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    display: none;
+}
+
+.campo-batalla p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.campo-batalla img, .elegir-jugada img{
+    width: 150px;
+    border-radius: 80px;
+}
+
+.mensaje-batalla{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.elegir-jugada img{
+    margin: 12px;
+}
+
+@media (min-width: 550px){
+    .campo-batalla{
+        flex-direction: row;
+        padding: 50px;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+
+
